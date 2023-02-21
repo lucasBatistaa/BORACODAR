@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Rubik", sans-serif;
+    background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) no-repeat
+        fixed;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.text8xl {
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "boarding qrcode" "alert alert";
+    align-items: center;
+    row-gap: 2.4rem;
+}
+
+section {
+    background-color: white;
+
+    padding: 2.4rem 3.2rem;
+    border-radius: 2.4rem;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+
+    color: rgba(0, 0, 0, 0.64);
+}
+
+strong {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+sup {
+    font-weight: 500;
+
+    font-size: 10px;
+}
+
+footer {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 2rem 2.8rem 0 2.8rem;
+    text-align: center;
+
+    color: white;
+    opacity: 0.64;
+}
+
+#boarding-pass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    width: 32.7rem;
+    height: 100vh;
+    margin: 2rem auto;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.top p {
+    white-space: nowrap;
+}
+
+.middle {
+    border: 1px dashed rgba(0, 0, 0, 0.32);
+    border-left: 0;
+    border-right: 0;
+}
+
+.bottom {
+    cursor: pointer;
+}
+
+.bottom .flight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    grid-area: boarding;
+}
+
+.bottom .flight-info .boarding-time p {
+    margin-bottom: 0.6rem;
+}
+
+.bottom .flight-info .boarding-time strong {
+    background-color: #633bbc;
+    margin-top: 0.2rem;
+    padding: 0.4rem 0.8rem;
+
+    border-radius: 0.8rem;
+    color: white;
+}
+
+.bottom .qrcode {
+    grid-area: qrcode;
+    justify-self: center;
+}
+
+.bottom .alert {
+    color: rgba(0, 0, 0, 0.8);
+    grid-area: alert;
+}
+
+.cut {
+    transform: rotate(5deg) translateY(2rem);
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        background-color: white;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+        border-radius: 0;
+    }
+
+    .top {
+        --mask: radial-gradient(1.2rem at 1.2rem bottom, #0000 93%, black) -1.2rem;
+        -webkit-mask-repeat: repeat-x;
+        mask-repeat: repeat-x;
+
+        border-radius: 2.4rem 2.4rem 0 0;
+    }
+
+    .middle {
+        --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, #0000 93%, black) -1.2rem -1.2rem;
+    }
+
+    .bottom {
+        --mask: radial-gradient(1.2rem at 1.2rem top, #0000 93%, black) -1.2rem;
+        -webkit-mask-repeat: repeat-x;
+        mask-repeat: repeat-x;
+
+        border-radius: 0 0 2.4rem 2.4rem;
+        /* transform: translateY(2rem); */
+        /* transform: rotate(5deg); */
+    }
+}
