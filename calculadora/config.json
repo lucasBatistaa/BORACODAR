@@ -1,0 +1,102 @@
+{
+    "buttons": [
+        {
+            "name": "CE",
+            "class": "color-purple",
+            "function": "clean()"
+        },
+        {
+            "name": "C",
+            "class": "",
+            "function": "dump()"
+        },
+        {
+            "name": "<i class='ph-percent'></i>",
+            "class": "",
+            "function": "operation('%')"
+        },
+        {
+            "name": "<i class='ph-divide'></i>",
+            "class": "bg-purple",
+            "function": "operation('/')"
+        },
+        {
+            "name": "7",
+            "class": "",
+            "function": "addNumber(7)"
+        },
+        {
+            "name": "8",
+            "class": "",
+            "function": "addNumber(8)"
+        },
+        {
+            "name": "9",
+            "class": "",
+            "function": "addNumber(9)"
+        },
+        {
+            "name": "<i class='ph-x'></i>",
+            "class": "bg-purple",
+            "function": "operation('*')"
+        },
+        {
+            "name": "4",
+            "class": "",
+            "function": "addNumber(4)"
+        },
+        {
+            "name": "5",
+            "class": "",
+            "function": "addNumber(5)"
+        },
+        {
+            "name": "6",
+            "class": "",
+            "function": "addNumber(6)"
+        },
+        {
+            "name": "<i class='ph-minus'></i>",
+            "class": "bg-purple",
+            "function": "operation('-')"
+        },
+        {
+            "name": "1",
+            "class": "",
+            "function": "addNumber(1)"
+        },
+        {
+            "name": "2",
+            "class": "",
+            "function": "addNumber(2)"
+        },
+        {
+            "name": "3",
+            "class": "",
+            "function": "addNumber(3)"
+        },
+        {
+            "name": "<i class='ph-plus'></i>",
+            "class": "bg-purple",
+            "function": "operation('+')"
+        },
+        {
+            "name": "<i class='ph-plus-minus'></i>",
+            "class": ""
+        },
+        {
+            "name": "0",
+            "class": "",
+            "function": "addNumber(0)"
+        },
+        {
+            "name": ",",
+            "class": ""
+        },
+        {
+            "name": "<i class='ph-equals'></i>",
+            "class": "bg-equal",
+            "function": "operation('=')"
+        }
+    ]
+}
