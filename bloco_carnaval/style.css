@@ -14,6 +14,7 @@
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
+  background-color: #fffffe;
 }
 
 /* Utilitários */
@@ -28,6 +29,10 @@ body {
   text-transform: uppercase;
 
   cursor: pointer;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .primary {
@@ -53,12 +58,6 @@ body {
   background-color: #f4f4ff;
 }
 
-.input input {
-  background-color: #f4f4ff;
-
-  border: 0;
-}
-
 /* Tags */
 i {
   color: #e45858;
@@ -68,21 +67,21 @@ i {
 h1 {
   color: #121214;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 125%;
 }
 
 h2 {
   color: #121214;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 140%;
 }
 
 h3 {
   color: #121214;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 140%;
 }
 
@@ -92,41 +91,68 @@ p {
   line-height: 160%;
 }
 
+header {
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+
+  background-color: #f8f8ff;
+
+  /* max-height: 53.2rem; */
+  margin: auto;
+}
+
 main {
   margin: 10rem auto;
   max-width: 121.6rem;
+  padding: 0 5rem;
+}
+
+input,
+select {
+  all: unset;
+  background-color: #f4f4ff;
+  width: 100%;
+  text-align: left;
+  color: #7c7c8a;
 }
 
 /* Classes e IDs*/
-.content {
-  background-color: #f8f8ff;
+header .first-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
 
+  width: 40.7rem;
+  height: 34.5rem;
+}
+
+header .second-image {
+  position: absolute;
+  right: 0;
+  bottom: -0.12rem;
+  z-index: 0;
+
+  width: 41.4rem;
+  height: 33rem;
+}
+
+.content {
   display: flex;
   flex-direction: column;
 
   align-items: center;
   justify-content: center;
 
-  text-align: center;
-
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   gap: 4rem;
+  margin: auto;
+
+  width: fit-content;
 
   z-index: 1;
-}
-
-.content .first-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-}
-
-.content .second-image {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
 }
 
 .content .text-header {
@@ -136,6 +162,8 @@ main {
 
   max-width: 647px;
   padding: 0 1rem;
+
+  z-index: 1;
 }
 
 .content strong {
@@ -153,13 +181,25 @@ main {
   flex-wrap: wrap;
 
   gap: 2.4rem;
-
   padding: 4rem;
 
   background-color: #fff;
 
   border: 1px solid #eaeaea;
   border-radius: 1rem;
+
+  z-index: 1;
+}
+
+.content .location-input {
+  position: relative;
+  z-index: 1;
+}
+
+.content .location-input .ph-caret-down {
+  position: absolute;
+  right: 0.8rem;
+  z-index: 0;
 }
 
 .main-header {
@@ -176,10 +216,10 @@ main {
 }
 
 #cards {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 3.2rem;
-  grid-template-columns: 1fr 1fr 1fr;
 
   margin-top: 4rem;
 }
@@ -216,4 +256,25 @@ main {
 #cards .card .card-info .location {
   display: flex;
   gap: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 50%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  #main .main-header {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #main .main-header {
+    flex-direction: column;
+  }
 }

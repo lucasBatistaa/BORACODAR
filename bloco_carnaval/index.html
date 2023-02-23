@@ -21,10 +21,10 @@
 <body>
 
     <header>
-        <!-- <img src="assets/ilustra-01.svg" alt="imagem de folhas de carnaval"> -->
+        <img class="first-image" src="assets/ilustra-01.svg" alt="Imagem ed folhas de carnaval">
+        <img class="second-image" src="assets/ilustra-02.svg" alt="Imagem de uma mulher dançando">
+
         <div class="content">
-            <!-- <img class="first-image" src="assets/ilustra-01.svg" alt="Imagem ed folhas de carnaval"> -->
-            <!-- <img class="second-image" src="assets/ilustra-02.svg" alt="Imagem de uma mulher dançando"> -->
             <div class="text-header">
                 <strong>FIND YOUR BLOCK</strong>
 
@@ -41,10 +41,9 @@
                 </div>
                 <div class="location-input input">
                     <i class="ph-map-pin"></i>
-                    <input 
-                        type="text"
-                        placeholder="Pesquise por nome"    
-                    >
+                    <select name="location" id="location">
+                        <!-- <option value="0" selected>Selecione uma cidade</option> -->
+                    </select>
                     <i class="ph-caret-down"></i>
                 </div>
 
@@ -57,15 +56,26 @@
         <div class="main-header">
             <h2>Blocos recomendados</h2>
             <div>
-                <button class="btn primary">Lista</button>
-                <button class="btn secondary">Mapa</button>
+                <button 
+                    id="button-list"
+                    class="btn primary"
+                    onclick="showList()"    
+                >
+                    Lista
+                </button>
+                <button 
+                    id="button-map"
+                    class="btn secondary"
+                    onclick="showMap()"    
+                >
+                    Mapa
+                </button>
             </div>
         </div>
         
 
         <section id="cards">
-            
-            
+
         </section>
     </main>
     

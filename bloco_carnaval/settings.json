@@ -4,55 +4,64 @@
             "name": "O Python do vovô não sobe mais",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "São Paulo - SP",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image1.png"
         },
         {
             "name": "Todo mundo null",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "Florianópolis - SC",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image2.png"
         },
         {
             "name": "Hoje dou exception",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "Curitiba - PR",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image3.png"
         },
         {
             "name": "Manda Node",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "Salvador - BA",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image4.png"
         },
         {
             "name": "Só no back-end",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "São Paulo - SP",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image5.png"
         },
         {
             "name": "Esse anel não é de Ruby",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "São Paulo - SP",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image6.png"
         },
         {
             "name": "Pimenta no C# dos outros é refresco",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "Rio de Janeiro - RJ",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image7.png"
         },
         {
             "name": "EnCACHE aqui",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "Porto Alegre - RS",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image8.png"
         },
         {
             "name": "São Paulo - SP",
             "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
             "location": "São Paulo - SP",
-            "image": "https://picsum.photos/200"
+            "image": "assets/image9.png"
         }
+    ],
+    "options": [
+        "Selecione uma cidade",
+        "São Paulo - SP",
+        "Porto Alegre - RS",
+        "Rio de Janeiro - RJ",
+        "Florianópolis - SC",
+        "Curitiba - PR",
+        "Salvador - BA"
     ]
 }
