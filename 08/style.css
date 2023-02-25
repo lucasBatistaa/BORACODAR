@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto";
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+
+  background-color: #292738;
+  color: #fff;
+
+  height: 100vh;
+}
+
+/* Utilitárias */
+.flex-section {
+  background: #363447;
+
+  padding: 2.9rem 4.8rem;
+  border-radius: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  /* align-items: center; */
+  text-align: center;
+}
+
+/* Tags */
+
+h1,
+h2,
+p {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2,
+p {
+  font-weight: 500;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Classes e IDs */
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 5.9rem;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  max-width: 112rem;
+  padding: 12rem 0;
+}
+
+#main-information {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1.3fr;
+  gap: 3.2rem;
+}
+
+#sales-week {
+  background-color: #363447;
+  padding: 2.9rem 4.8rem;
+  border-radius: 1.6rem;
+}
+
+.view-sales {
+  display: flex;
+
+  justify-content: space-between;
+  gap: 3.2rem;
+
+  margin-top: 3.2rem;
+}
+
+.view-sales .top,
+.view-sales .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.view-sales .top {
+  margin-bottom: 3.2rem;
+}
+
+.view-sales .right {
+  display: flex;
+
+  align-self: end;
+  gap: 5.9rem;
+}
+
+.view-sales .graphic {
+  height: 30rem;
+  width: 1.5rem;
+
+  margin: auto;
+
+  border-radius: 99.9rem;
+  background: linear-gradient(180deg, #90f7ec 0%, #32ccbc 100%);
+}
